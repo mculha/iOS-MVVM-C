@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9B865DF34D8635E723A8B6C7 /* Pods_iOS_MVVM_C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 296971A7A061A431D4886E06 /* Pods_iOS_MVVM_C.framework */; };
+		E92B4E952A8ABB9A00879FD3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4E942A8ABB9A00879FD3 /* Coordinator.swift */; };
+		E92B4E972A8ABCDC00879FD3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4E962A8ABCDC00879FD3 /* AppCoordinator.swift */; };
 		E9FF14BC2A89711C00E51C58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF14BB2A89711C00E51C58 /* AppDelegate.swift */; };
 		E9FF14BE2A89711C00E51C58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF14BD2A89711C00E51C58 /* SceneDelegate.swift */; };
 		E9FF14C02A89711C00E51C58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF14BF2A89711C00E51C58 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 		296971A7A061A431D4886E06 /* Pods_iOS_MVVM_C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_MVVM_C.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0D495A8885C430C7F71109 /* Pods-iOS-MVVM-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-MVVM-C.debug.xcconfig"; path = "Target Support Files/Pods-iOS-MVVM-C/Pods-iOS-MVVM-C.debug.xcconfig"; sourceTree = "<group>"; };
 		B3428509088252C8D4E83501 /* Pods-iOS-MVVM-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-MVVM-C.release.xcconfig"; path = "Target Support Files/Pods-iOS-MVVM-C/Pods-iOS-MVVM-C.release.xcconfig"; sourceTree = "<group>"; };
+		E92B4E942A8ABB9A00879FD3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E92B4E962A8ABCDC00879FD3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		E9FF14B82A89711C00E51C58 /* iOS-MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FF14BB2A89711C00E51C58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9FF14BD2A89711C00E51C58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +52,6 @@
 				8C0D495A8885C430C7F71109 /* Pods-iOS-MVVM-C.debug.xcconfig */,
 				B3428509088252C8D4E83501 /* Pods-iOS-MVVM-C.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +61,15 @@
 				296971A7A061A431D4886E06 /* Pods_iOS_MVVM_C.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E92B4E932A8AB63400879FD3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4E942A8ABB9A00879FD3 /* Coordinator.swift */,
+				E92B4E962A8ABCDC00879FD3 /* AppCoordinator.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		E9FF14AF2A89711C00E51C58 = {
@@ -81,6 +93,7 @@
 		E9FF14BA2A89711C00E51C58 /* iOS-MVVM-C */ = {
 			isa = PBXGroup;
 			children = (
+				E92B4E932A8AB63400879FD3 /* Scenes */,
 				E9FF14BB2A89711C00E51C58 /* AppDelegate.swift */,
 				E9FF14BD2A89711C00E51C58 /* SceneDelegate.swift */,
 				E9FF14BF2A89711C00E51C58 /* ViewController.swift */,
@@ -189,7 +202,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92B4E952A8ABB9A00879FD3 /* Coordinator.swift in Sources */,
 				E9FF14C02A89711C00E51C58 /* ViewController.swift in Sources */,
+				E92B4E972A8ABCDC00879FD3 /* AppCoordinator.swift in Sources */,
 				E9FF14BC2A89711C00E51C58 /* AppDelegate.swift in Sources */,
 				E9FF14BE2A89711C00E51C58 /* SceneDelegate.swift in Sources */,
 			);
@@ -347,6 +362,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,6 +392,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
