@@ -6,43 +6,25 @@
 //
 
 import Foundation
+import UIKit
 
-class Coordinator {
+protocol Coordinator: AnyObject {
     
-    private(set) var childCoordinators: [Coordinator] = []
+    var childCoordinators: [Coordinator] { get set }
+    var navigationController: UINavigationController { get set }
     
-    func start() {
-        preconditionFailure("This method needs to be overriden by concrete subclass")
-    }
-    
-    func finish() {
-        preconditionFailure("This method needs to be overriden by concrete subclass")
-    }
-    
-    func addChildCoordinator(_ coordinator: Coordinator) {
-        childCoordinators.append(coordinator)
-    }
-    
-    func removeChildCoordinator(_ coordinator: Coordinator) {
-        guard let index = childCoordinators.firstIndex(of: coordinator) else { return }
-        
-        childCoordinators.remove(at: index)
-    }
-    
-    func removeAllChildCoordinatorsWith<T>(type: T.Type) {
-        childCoordinators = childCoordinators.filter { $0 is T == false}
-    }
-    
-    func removeAllChildCoordinators() {
-        childCoordinators.removeAll()
-    }
+    func start()
+    func addChild(coordinator: Coordinator)
+    func removeChild(coordinator: Coordinator)
     
 }
 
-extension Coordinator: Equatable {
+extension Coordinator {
     
-    static func == (lhs: Coordinator, rhs: Coordinator) -> Bool {
-        return lhs === rhs
+    func addChild(coordinator: Coordinator) {
+        childCoordinators.append(coordinator)
     }
-    
+    func removeChild(coordinator: Coordinator) {
+        childCoordinators = childCoordinators.filter {$0 !== coordinator}
+    }
 }

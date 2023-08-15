@@ -8,25 +8,32 @@
 import Foundation
 import UIKit
 
-class AppCoordinator: Coordinator {
+class AppCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     
-    let window: UIWindow?
     
-    lazy var rootViewController: UINavigationController = {
-        return UINavigationController(rootViewController: UIViewController())
-    }()
+    var childCoordinators: [Coordinator] = []
+    var navigationController: UINavigationController
     
-    init(window: UIWindow?) {
-        self.window = window
+    init(navController: UINavigationController) {
+        self.navigationController = navController
     }
     
-    override func start() {
-        guard let window else { return }
-        window.rootViewController = rootViewController
-        window.makeKeyAndVisible()
+    func start() {
+        let vc: ViewController = ViewController.instantiate()
+        vc.coordinator = self
+        navigationController.delegate = self
+        navigationController.pushViewController(vc, animated: true)
     }
+}
+
+extension UIViewController {
     
-    override func finish() {
-        
+    class func instantiate<T: UIViewController>(storyboard: AppStoryboard = .main) -> T {
+        let storyboard = UIStoryboard(name: storyboard.rawValue, bundle: nil)
+        let identifier = String(describing: self)
+        return storyboard.instantiateViewController(withIdentifier: identifier) as! T
     }
+}
+enum AppStoryboard: String {
+    case main = "Main"
 }
