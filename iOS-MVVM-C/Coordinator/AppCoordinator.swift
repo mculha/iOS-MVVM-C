@@ -8,14 +8,13 @@
 import Foundation
 import UIKit
 
-class AppCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
-    
+final class AppCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
     
-    init(navController: UINavigationController) {
-        self.navigationController = navController
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
     }
     
     func start() {

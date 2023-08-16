@@ -21,6 +21,11 @@
 		E92B4EBC2A8D5CBB00879FD3 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EBB2A8D5CBA00879FD3 /* SearchViewModel.swift */; };
 		E92B4EBF2A8D5CCF00879FD3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EBE2A8D5CCF00879FD3 /* BaseViewController.swift */; };
 		E92B4EC12A8D5CE100879FD3 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EC02A8D5CE100879FD3 /* BaseViewModel.swift */; };
+		E92B4EC32A8D5D6E00879FD3 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EC22A8D5D6E00879FD3 /* ProfileViewModel.swift */; };
+		E92B4EC52A8D5D7E00879FD3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EC42A8D5D7E00879FD3 /* HomeViewModel.swift */; };
+		E92B4EC72A8D5DCD00879FD3 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EC62A8D5DCD00879FD3 /* SearchCoordinator.swift */; };
+		E92B4EC92A8D5E8B00879FD3 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EC82A8D5E8B00879FD3 /* ProfileCoordinator.swift */; };
+		E92B4ECB2A8D5E9F00879FD3 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4ECA2A8D5E9F00879FD3 /* HomeCoordinator.swift */; };
 		E9FF14BC2A89711C00E51C58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF14BB2A89711C00E51C58 /* AppDelegate.swift */; };
 		E9FF14BE2A89711C00E51C58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF14BD2A89711C00E51C58 /* SceneDelegate.swift */; };
 		E9FF14C02A89711C00E51C58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF14BF2A89711C00E51C58 /* ViewController.swift */; };
@@ -46,6 +51,11 @@
 		E92B4EBB2A8D5CBA00879FD3 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		E92B4EBE2A8D5CCF00879FD3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E92B4EC02A8D5CE100879FD3 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		E92B4EC22A8D5D6E00879FD3 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		E92B4EC42A8D5D7E00879FD3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E92B4EC62A8D5DCD00879FD3 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		E92B4EC82A8D5E8B00879FD3 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		E92B4ECA2A8D5E9F00879FD3 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		E9FF14B82A89711C00E51C58 /* iOS-MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FF14BB2A89711C00E51C58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9FF14BD2A89711C00E51C58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +119,8 @@
 			children = (
 				E92B4EAD2A8D5BA500879FD3 /* Home.storyboard */,
 				E92B4EB92A8D5C7B00879FD3 /* HomeViewController.swift */,
+				E92B4EC42A8D5D7E00879FD3 /* HomeViewModel.swift */,
+				E92B4ECA2A8D5E9F00879FD3 /* HomeCoordinator.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -118,6 +130,8 @@
 			children = (
 				E92B4EAB2A8D5B9E00879FD3 /* Profile.storyboard */,
 				E92B4EB72A8D5C6F00879FD3 /* ProfileViewController.swift */,
+				E92B4EC22A8D5D6E00879FD3 /* ProfileViewModel.swift */,
+				E92B4EC82A8D5E8B00879FD3 /* ProfileCoordinator.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -128,6 +142,7 @@
 				E92B4EA92A8D5B9400879FD3 /* Search.storyboard */,
 				E92B4EB52A8D5C5C00879FD3 /* SearchViewController.swift */,
 				E92B4EBB2A8D5CBA00879FD3 /* SearchViewModel.swift */,
+				E92B4EC62A8D5DCD00879FD3 /* SearchCoordinator.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -298,14 +313,19 @@
 				E92B4E952A8ABB9A00879FD3 /* Coordinator.swift in Sources */,
 				E92B4EB42A8D5C2200879FD3 /* Extension+UIViewController.swift in Sources */,
 				E92B4EB62A8D5C5C00879FD3 /* SearchViewController.swift in Sources */,
+				E92B4EC92A8D5E8B00879FD3 /* ProfileCoordinator.swift in Sources */,
 				E9FF14C02A89711C00E51C58 /* ViewController.swift in Sources */,
 				E92B4EBF2A8D5CCF00879FD3 /* BaseViewController.swift in Sources */,
+				E92B4EC32A8D5D6E00879FD3 /* ProfileViewModel.swift in Sources */,
 				E92B4E972A8ABCDC00879FD3 /* AppCoordinator.swift in Sources */,
 				E92B4EC12A8D5CE100879FD3 /* BaseViewModel.swift in Sources */,
 				E92B4EBA2A8D5C7B00879FD3 /* HomeViewController.swift in Sources */,
+				E92B4ECB2A8D5E9F00879FD3 /* HomeCoordinator.swift in Sources */,
 				E9FF14BC2A89711C00E51C58 /* AppDelegate.swift in Sources */,
 				E92B4EB82A8D5C6F00879FD3 /* ProfileViewController.swift in Sources */,
+				E92B4EC72A8D5DCD00879FD3 /* SearchCoordinator.swift in Sources */,
 				E92B4EB22A8D5BD800879FD3 /* AppStoryboard.swift in Sources */,
+				E92B4EC52A8D5D7E00879FD3 /* HomeViewModel.swift in Sources */,
 				E9FF14BE2A89711C00E51C58 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
