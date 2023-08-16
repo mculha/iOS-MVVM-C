@@ -10,6 +10,17 @@
 		9B865DF34D8635E723A8B6C7 /* Pods_iOS_MVVM_C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 296971A7A061A431D4886E06 /* Pods_iOS_MVVM_C.framework */; };
 		E92B4E952A8ABB9A00879FD3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4E942A8ABB9A00879FD3 /* Coordinator.swift */; };
 		E92B4E972A8ABCDC00879FD3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4E962A8ABCDC00879FD3 /* AppCoordinator.swift */; };
+		E92B4EAA2A8D5B9500879FD3 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92B4EA92A8D5B9400879FD3 /* Search.storyboard */; };
+		E92B4EAC2A8D5B9E00879FD3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92B4EAB2A8D5B9E00879FD3 /* Profile.storyboard */; };
+		E92B4EAE2A8D5BA500879FD3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92B4EAD2A8D5BA500879FD3 /* Home.storyboard */; };
+		E92B4EB22A8D5BD800879FD3 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EB12A8D5BD800879FD3 /* AppStoryboard.swift */; };
+		E92B4EB42A8D5C2200879FD3 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EB32A8D5C2200879FD3 /* Extension+UIViewController.swift */; };
+		E92B4EB62A8D5C5C00879FD3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EB52A8D5C5C00879FD3 /* SearchViewController.swift */; };
+		E92B4EB82A8D5C6F00879FD3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EB72A8D5C6F00879FD3 /* ProfileViewController.swift */; };
+		E92B4EBA2A8D5C7B00879FD3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EB92A8D5C7B00879FD3 /* HomeViewController.swift */; };
+		E92B4EBC2A8D5CBB00879FD3 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EBB2A8D5CBA00879FD3 /* SearchViewModel.swift */; };
+		E92B4EBF2A8D5CCF00879FD3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EBE2A8D5CCF00879FD3 /* BaseViewController.swift */; };
+		E92B4EC12A8D5CE100879FD3 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EC02A8D5CE100879FD3 /* BaseViewModel.swift */; };
 		E9FF14BC2A89711C00E51C58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF14BB2A89711C00E51C58 /* AppDelegate.swift */; };
 		E9FF14BE2A89711C00E51C58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF14BD2A89711C00E51C58 /* SceneDelegate.swift */; };
 		E9FF14C02A89711C00E51C58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF14BF2A89711C00E51C58 /* ViewController.swift */; };
@@ -24,6 +35,17 @@
 		B3428509088252C8D4E83501 /* Pods-iOS-MVVM-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-MVVM-C.release.xcconfig"; path = "Target Support Files/Pods-iOS-MVVM-C/Pods-iOS-MVVM-C.release.xcconfig"; sourceTree = "<group>"; };
 		E92B4E942A8ABB9A00879FD3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E92B4E962A8ABCDC00879FD3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E92B4EA92A8D5B9400879FD3 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		E92B4EAB2A8D5B9E00879FD3 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		E92B4EAD2A8D5BA500879FD3 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		E92B4EB12A8D5BD800879FD3 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
+		E92B4EB32A8D5C2200879FD3 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		E92B4EB52A8D5C5C00879FD3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E92B4EB72A8D5C6F00879FD3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E92B4EB92A8D5C7B00879FD3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E92B4EBB2A8D5CBA00879FD3 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		E92B4EBE2A8D5CCF00879FD3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E92B4EC02A8D5CE100879FD3 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		E9FF14B82A89711C00E51C58 /* iOS-MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FF14BB2A89711C00E51C58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9FF14BD2A89711C00E51C58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,10 +88,74 @@
 		E92B4E932A8AB63400879FD3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E92B4EA82A8D5B8500879FD3 /* Search */,
+				E92B4EA72A8D559700879FD3 /* Profile */,
+				E92B4EA62A8D559200879FD3 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E92B4EA42A8D543E00879FD3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
 				E92B4E942A8ABB9A00879FD3 /* Coordinator.swift */,
 				E92B4E962A8ABCDC00879FD3 /* AppCoordinator.swift */,
 			);
-			path = Scenes;
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E92B4EA62A8D559200879FD3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4EAD2A8D5BA500879FD3 /* Home.storyboard */,
+				E92B4EB92A8D5C7B00879FD3 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E92B4EA72A8D559700879FD3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4EAB2A8D5B9E00879FD3 /* Profile.storyboard */,
+				E92B4EB72A8D5C6F00879FD3 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E92B4EA82A8D5B8500879FD3 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4EA92A8D5B9400879FD3 /* Search.storyboard */,
+				E92B4EB52A8D5C5C00879FD3 /* SearchViewController.swift */,
+				E92B4EBB2A8D5CBA00879FD3 /* SearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		E92B4EAF2A8D5BB700879FD3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4EB02A8D5BC100879FD3 /* Extension */,
+				E92B4EB12A8D5BD800879FD3 /* AppStoryboard.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		E92B4EB02A8D5BC100879FD3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4EB32A8D5C2200879FD3 /* Extension+UIViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E92B4EBD2A8D5CC300879FD3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4EBE2A8D5CCF00879FD3 /* BaseViewController.swift */,
+				E92B4EC02A8D5CE100879FD3 /* BaseViewModel.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		E9FF14AF2A89711C00E51C58 = {
@@ -93,7 +179,10 @@
 		E9FF14BA2A89711C00E51C58 /* iOS-MVVM-C */ = {
 			isa = PBXGroup;
 			children = (
+				E92B4EBD2A8D5CC300879FD3 /* Base */,
+				E92B4EA42A8D543E00879FD3 /* Coordinator */,
 				E92B4E932A8AB63400879FD3 /* Scenes */,
+				E92B4EAF2A8D5BB700879FD3 /* Utility */,
 				E9FF14BB2A89711C00E51C58 /* AppDelegate.swift */,
 				E9FF14BD2A89711C00E51C58 /* SceneDelegate.swift */,
 				E9FF14BF2A89711C00E51C58 /* ViewController.swift */,
@@ -166,6 +255,9 @@
 			files = (
 				E9FF14C82A89711D00E51C58 /* LaunchScreen.storyboard in Resources */,
 				E9FF14C52A89711D00E51C58 /* Assets.xcassets in Resources */,
+				E92B4EAC2A8D5B9E00879FD3 /* Profile.storyboard in Resources */,
+				E92B4EAE2A8D5BA500879FD3 /* Home.storyboard in Resources */,
+				E92B4EAA2A8D5B9500879FD3 /* Search.storyboard in Resources */,
 				E9FF14C32A89711C00E51C58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,10 +294,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92B4EBC2A8D5CBB00879FD3 /* SearchViewModel.swift in Sources */,
 				E92B4E952A8ABB9A00879FD3 /* Coordinator.swift in Sources */,
+				E92B4EB42A8D5C2200879FD3 /* Extension+UIViewController.swift in Sources */,
+				E92B4EB62A8D5C5C00879FD3 /* SearchViewController.swift in Sources */,
 				E9FF14C02A89711C00E51C58 /* ViewController.swift in Sources */,
+				E92B4EBF2A8D5CCF00879FD3 /* BaseViewController.swift in Sources */,
 				E92B4E972A8ABCDC00879FD3 /* AppCoordinator.swift in Sources */,
+				E92B4EC12A8D5CE100879FD3 /* BaseViewModel.swift in Sources */,
+				E92B4EBA2A8D5C7B00879FD3 /* HomeViewController.swift in Sources */,
 				E9FF14BC2A89711C00E51C58 /* AppDelegate.swift in Sources */,
+				E92B4EB82A8D5C6F00879FD3 /* ProfileViewController.swift in Sources */,
+				E92B4EB22A8D5BD800879FD3 /* AppStoryboard.swift in Sources */,
 				E9FF14BE2A89711C00E51C58 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
