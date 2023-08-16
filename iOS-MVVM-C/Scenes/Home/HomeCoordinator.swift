@@ -16,6 +16,7 @@ final class HomeCoordinator: Coordinator {
     }
     
     func start() {
-        fatalError("Build Here")
+        let vc: HomeViewController = HomeViewController.instantiate(storyboard: .home)
+        navigationController.pushViewController(vc, animated: true)
     }
 }

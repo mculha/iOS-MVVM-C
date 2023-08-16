@@ -16,6 +16,7 @@ final class ProfileCoordinator: Coordinator {
     }
     
     func start() {
-        fatalError("Build Here")
+        let vc: ProfileViewController = ProfileViewController.instantiate(storyboard: .profile)
+        navigationController.pushViewController(vc, animated: true)
     }
 }

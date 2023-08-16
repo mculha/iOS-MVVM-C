@@ -17,6 +17,7 @@ final class SearchCoordinator: Coordinator {
     }
     
     func start() {
-        fatalError("Build Here")
+        let vc: SearchViewController = SearchViewController.instantiate(storyboard: .search)
+        navigationController.pushViewController(vc, animated: true)
     }
 }
