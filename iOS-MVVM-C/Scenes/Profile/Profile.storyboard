@@ -22,11 +22,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jw3-si-ksG">
+                                <rect key="frame" x="149" y="486.66666666666669" width="95" height="35.000000000000057"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Purchase"/>
+                                <connections>
+                                    <action selector="purchasePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mtT-SD-cAV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yET-dp-Y6x" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Imj-Dq-cAz"/>
+                            <constraint firstItem="jw3-si-ksG" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Kcs-hn-lXn"/>
+                            <constraint firstItem="jw3-si-ksG" firstAttribute="top" secondItem="yET-dp-Y6x" secondAttribute="bottom" constant="50" id="NEk-f0-RIL"/>
                             <constraint firstItem="yET-dp-Y6x" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gEP-zc-0z8"/>
                         </constraints>
                     </view>
@@ -34,6 +44,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+        <!--Purchase View Controller-->
+        <scene sceneID="D3e-jX-Bbt">
+            <objects>
+                <viewController storyboardIdentifier="PurchaseViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I6f-zz-bje" customClass="PurchaseViewController" customModule="iOS_MVVM_C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eK8-wl-lXs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9C-mn-lRL">
+                                <rect key="frame" x="161" y="415.66666666666669" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xK3-1E-Jxg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M9C-mn-lRL" firstAttribute="centerY" secondItem="eK8-wl-lXs" secondAttribute="centerY" id="e18-ln-D6g"/>
+                            <constraint firstItem="M9C-mn-lRL" firstAttribute="centerX" secondItem="eK8-wl-lXs" secondAttribute="centerX" id="lig-o6-tsv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="erS-Iu-IQW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1126" y="-35"/>
         </scene>
     </scenes>
     <resources>

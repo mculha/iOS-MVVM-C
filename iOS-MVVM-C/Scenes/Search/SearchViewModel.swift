@@ -8,5 +8,9 @@
 import Foundation
 
 final class SearchViewModel: BaseViewModel {
+    private weak var coordinator: SearchCoordinator?
     
+    init(coordinator: SearchCoordinator) {
+        self.coordinator = coordinator
+    }
 }

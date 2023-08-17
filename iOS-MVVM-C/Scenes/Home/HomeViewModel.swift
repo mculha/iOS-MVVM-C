@@ -8,5 +8,9 @@
 import Foundation
 
 final class HomeViewModel: BaseViewModel {
+    weak var coordinator: HomeCoordinator?
     
+    init(coordinator: HomeCoordinator) {
+        self.coordinator = coordinator
+    }
 }

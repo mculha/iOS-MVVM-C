@@ -17,6 +17,7 @@ final class HomeCoordinator: Coordinator {
     
     func start() {
         let vc: HomeViewController = HomeViewController.instantiate(storyboard: .home)
+        vc.viewModel = HomeViewModel(coordinator: self)
         navigationController.pushViewController(vc, animated: true)
     }
 }

@@ -9,6 +9,8 @@ import UIKit
 
 class SearchViewController: BaseViewController {
     
+    var viewModel: SearchViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

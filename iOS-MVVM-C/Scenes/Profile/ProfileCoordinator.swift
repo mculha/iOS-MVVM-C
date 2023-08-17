@@ -17,6 +17,13 @@ final class ProfileCoordinator: Coordinator {
     
     func start() {
         let vc: ProfileViewController = ProfileViewController.instantiate(storyboard: .profile)
+        vc.viewModel = ProfileViewModel(coordinator: self)
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func pushPurchase() {
+        let vc: PurchaseViewController = PurchaseViewController.instantiate(storyboard: .profile)
+        vc.viewModel = PurchaseViewModel(coordinator: self)
         navigationController.pushViewController(vc, animated: true)
     }
 }

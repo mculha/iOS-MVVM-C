@@ -26,6 +26,8 @@
 		E92B4EC72A8D5DCD00879FD3 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EC62A8D5DCD00879FD3 /* SearchCoordinator.swift */; };
 		E92B4EC92A8D5E8B00879FD3 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EC82A8D5E8B00879FD3 /* ProfileCoordinator.swift */; };
 		E92B4ECB2A8D5E9F00879FD3 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4ECA2A8D5E9F00879FD3 /* HomeCoordinator.swift */; };
+		E92B4ECE2A8E7D0D00879FD3 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4ECD2A8E7D0C00879FD3 /* PurchaseViewController.swift */; };
+		E92B4ED02A8E7D4100879FD3 /* PurchaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4ECF2A8E7D4100879FD3 /* PurchaseViewModel.swift */; };
 		E9FF14BC2A89711C00E51C58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF14BB2A89711C00E51C58 /* AppDelegate.swift */; };
 		E9FF14BE2A89711C00E51C58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF14BD2A89711C00E51C58 /* SceneDelegate.swift */; };
 		E9FF14C02A89711C00E51C58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF14BF2A89711C00E51C58 /* ViewController.swift */; };
@@ -56,6 +58,8 @@
 		E92B4EC62A8D5DCD00879FD3 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		E92B4EC82A8D5E8B00879FD3 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		E92B4ECA2A8D5E9F00879FD3 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		E92B4ECD2A8E7D0C00879FD3 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		E92B4ECF2A8E7D4100879FD3 /* PurchaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewModel.swift; sourceTree = "<group>"; };
 		E9FF14B82A89711C00E51C58 /* iOS-MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FF14BB2A89711C00E51C58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9FF14BD2A89711C00E51C58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 		E92B4EA72A8D559700879FD3 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				E92B4ECC2A8E7CFD00879FD3 /* Purchase */,
 				E92B4EAB2A8D5B9E00879FD3 /* Profile.storyboard */,
 				E92B4EB72A8D5C6F00879FD3 /* ProfileViewController.swift */,
 				E92B4EC22A8D5D6E00879FD3 /* ProfileViewModel.swift */,
@@ -171,6 +176,15 @@
 				E92B4EC02A8D5CE100879FD3 /* BaseViewModel.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		E92B4ECC2A8E7CFD00879FD3 /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4ECD2A8E7D0C00879FD3 /* PurchaseViewController.swift */,
+				E92B4ECF2A8E7D4100879FD3 /* PurchaseViewModel.swift */,
+			);
+			path = Purchase;
 			sourceTree = "<group>";
 		};
 		E9FF14AF2A89711C00E51C58 = {
@@ -326,7 +340,9 @@
 				E92B4EC72A8D5DCD00879FD3 /* SearchCoordinator.swift in Sources */,
 				E92B4EB22A8D5BD800879FD3 /* AppStoryboard.swift in Sources */,
 				E92B4EC52A8D5D7E00879FD3 /* HomeViewModel.swift in Sources */,
+				E92B4ED02A8E7D4100879FD3 /* PurchaseViewModel.swift in Sources */,
 				E9FF14BE2A89711C00E51C58 /* SceneDelegate.swift in Sources */,
+				E92B4ECE2A8E7D0D00879FD3 /* PurchaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

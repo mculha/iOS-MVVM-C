@@ -8,5 +8,13 @@
 import Foundation
 
 final class ProfileViewModel: BaseViewModel {
+    weak var coordinator: ProfileCoordinator?
     
+    init(coordinator: ProfileCoordinator) {
+        self.coordinator = coordinator
+    }
+    
+    func purchasePressed() {
+        self.coordinator?.pushPurchase()
+    }
 }

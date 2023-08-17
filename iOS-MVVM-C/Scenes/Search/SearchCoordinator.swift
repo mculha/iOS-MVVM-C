@@ -18,6 +18,7 @@ final class SearchCoordinator: Coordinator {
     
     func start() {
         let vc: SearchViewController = SearchViewController.instantiate(storyboard: .search)
+        vc.viewModel = SearchViewModel(coordinator: self)
         navigationController.pushViewController(vc, animated: true)
     }
 }

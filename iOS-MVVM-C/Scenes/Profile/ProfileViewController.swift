@@ -9,7 +9,14 @@ import UIKit
 
 class ProfileViewController: BaseViewController {
 
+    var viewModel: ProfileViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func purchasePressed(_ sender: Any) {
+        self.viewModel.purchasePressed()
+    }
+    
 }
