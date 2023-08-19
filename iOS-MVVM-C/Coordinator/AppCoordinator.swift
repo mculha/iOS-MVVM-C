@@ -18,12 +18,14 @@ final class AppCoordinator: NSObject, Coordinator, UINavigationControllerDelegat
     }
     
     func start() {
-//        let vc: ViewController = ViewController.instantiate()
-//        vc.coordinator = self
-//        navigationController.delegate = self
-//        navigationController.pushViewController(vc, animated: true)
-        
-        setupTabbar()
+//        setupTabbar()
+        setupAuthCoordinator()
+    }
+    
+    func setupAuthCoordinator() {
+        let authCoordinator = AuthCoordinator(navigationController: self.navigationController)
+        addChild(coordinator: authCoordinator)
+        authCoordinator.start()
     }
     
     private func setupTabbar() {
