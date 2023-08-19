@@ -39,5 +39,7 @@ final class AuthCoordinator: Coordinator {
         let parent = self.parentCoordinator as! AppCoordinator
         parent.openMainCoordinator()
         parentCoordinator?.childDidFinish(self)
+        //Necessary to avoid memory leaks another option is to define navigation Controller as weak
+        self.navigationController.viewControllers.removeAll { $0 is RegisterViewController || $0 is LoginViewController }
     }
 }
