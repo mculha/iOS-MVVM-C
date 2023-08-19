@@ -34,6 +34,7 @@
 		E92B4EFB2A913CF200879FD3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EFA2A913CF200879FD3 /* LoginViewModel.swift */; };
 		E92B4EFD2A913D1B00879FD3 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EFC2A913D1B00879FD3 /* RegisterViewModel.swift */; };
 		E92B4EFF2A913EF100879FD3 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4EFE2A913EF100879FD3 /* AuthCoordinator.swift */; };
+		E92B4F022A9145F100879FD3 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B4F012A9145F100879FD3 /* MainCoordinator.swift */; };
 		E9FF14BC2A89711C00E51C58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF14BB2A89711C00E51C58 /* AppDelegate.swift */; };
 		E9FF14BE2A89711C00E51C58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF14BD2A89711C00E51C58 /* SceneDelegate.swift */; };
 		E9FF14C02A89711C00E51C58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF14BF2A89711C00E51C58 /* ViewController.swift */; };
@@ -72,6 +73,7 @@
 		E92B4EFA2A913CF200879FD3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E92B4EFC2A913D1B00879FD3 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		E92B4EFE2A913EF100879FD3 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		E92B4F012A9145F100879FD3 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		E9FF14B82A89711C00E51C58 /* iOS-MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FF14BB2A89711C00E51C58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9FF14BD2A89711C00E51C58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,10 +116,8 @@
 		E92B4E932A8AB63400879FD3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E92B4F002A9145CF00879FD3 /* Main */,
 				E92B4EF12A913C7F00879FD3 /* Auth */,
-				E92B4EA82A8D5B8500879FD3 /* Search */,
-				E92B4EA72A8D559700879FD3 /* Profile */,
-				E92B4EA62A8D559200879FD3 /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -227,6 +227,17 @@
 				E92B4EFC2A913D1B00879FD3 /* RegisterViewModel.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		E92B4F002A9145CF00879FD3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4EA82A8D5B8500879FD3 /* Search */,
+				E92B4EA72A8D559700879FD3 /* Profile */,
+				E92B4EA62A8D559200879FD3 /* Home */,
+				E92B4F012A9145F100879FD3 /* MainCoordinator.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		E9FF14AF2A89711C00E51C58 = {
@@ -389,6 +400,7 @@
 				E92B4EFD2A913D1B00879FD3 /* RegisterViewModel.swift in Sources */,
 				E92B4EC52A8D5D7E00879FD3 /* HomeViewModel.swift in Sources */,
 				E92B4ED02A8E7D4100879FD3 /* PurchaseViewModel.swift in Sources */,
+				E92B4F022A9145F100879FD3 /* MainCoordinator.swift in Sources */,
 				E9FF14BE2A89711C00E51C58 /* SceneDelegate.swift in Sources */,
 				E92B4ECE2A8E7D0D00879FD3 /* PurchaseViewController.swift in Sources */,
 			);
