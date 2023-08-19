@@ -34,4 +34,10 @@ final class AuthCoordinator: Coordinator {
         vc.viewModel = viewModel
         self.navigationController.pushViewController(vc, animated: true)
     }
+    
+    func prepareMain() {
+        let parent = self.parentCoordinator as! AppCoordinator
+        parent.openMainCoordinator()
+        parentCoordinator?.childDidFinish(self)
+    }
 }

@@ -18,5 +18,6 @@ class RegisterViewController: BaseViewController {
     }
     
     @IBAction func homePressed(_ sender: Any) {
+        self.viewModel.homePressed()
     }
 }

@@ -17,4 +17,8 @@ final class LoginViewModel: BaseViewModel {
     func registerPressed() {
         self.coordinator?.prepareRegister()
     }
+    
+    func homePressed() {
+        self.coordinator?.prepareMain()
+    }
 }

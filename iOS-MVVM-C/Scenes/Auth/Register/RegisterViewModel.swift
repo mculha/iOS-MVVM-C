@@ -15,4 +15,7 @@ final class RegisterViewModel: BaseViewModel {
         self.coordinator = coordinator
     }
     
+    func homePressed() {
+        self.coordinator?.prepareMain()
+    }
 }

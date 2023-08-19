@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func homePressed(_ sender: Any) {
+        self.viewModel.homePressed()
     }
     
 }
