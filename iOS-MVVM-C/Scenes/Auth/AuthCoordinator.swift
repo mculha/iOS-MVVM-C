@@ -10,7 +10,7 @@ import UIKit
 
 final class AuthCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
-    
+    weak var parentCoordinator: Coordinator?
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {

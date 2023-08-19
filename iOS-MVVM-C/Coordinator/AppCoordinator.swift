@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 final class AppCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
+    var parentCoordinator: Coordinator?
     
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
@@ -24,6 +25,7 @@ final class AppCoordinator: NSObject, Coordinator, UINavigationControllerDelegat
     
     func setupAuthCoordinator() {
         let authCoordinator = AuthCoordinator(navigationController: self.navigationController)
+        authCoordinator.parentCoordinator = self
         addChild(coordinator: authCoordinator)
         authCoordinator.start()
     }
@@ -50,6 +52,10 @@ final class AppCoordinator: NSObject, Coordinator, UINavigationControllerDelegat
         addChild(coordinator: homeCoordinator)
         addChild(coordinator: profileCoordinator)
         addChild(coordinator: searchCoordinator)
+        
+        homeCoordinator.parentCoordinator = self
+        profileCoordinator.parentCoordinator = self
+        searchCoordinator.parentCoordinator = self
         
         homeCoordinator.start()
         profileCoordinator.start()

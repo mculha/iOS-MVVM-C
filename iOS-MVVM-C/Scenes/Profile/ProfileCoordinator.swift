@@ -9,6 +9,7 @@ import UIKit
 
 final class ProfileCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
+    weak var parentCoordinator: Coordinator?
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
