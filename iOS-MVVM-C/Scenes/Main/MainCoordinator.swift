@@ -38,10 +38,6 @@ final class MainCoordinator: Coordinator {
         let searchCoordinator = SearchCoordinator(navigationController: searchNavigationController)
         searchNavigationController.tabBarItem = buildTabItem(title: "Search", image: UIImage(systemName: "magnifyingglass.circle")!, selectedImage: UIImage(systemName: "magnifyingglass.circle.fill")!)
         
-        tabbar.viewControllers = [profileNavigationController, homeNavigationController, searchNavigationController]
-        navigationController.pushViewController(tabbar, animated: true)
-        navigationController.setNavigationBarHidden(true, animated: true)
-        
         addChild(coordinator: homeCoordinator)
         addChild(coordinator: profileCoordinator)
         addChild(coordinator: searchCoordinator)
@@ -53,6 +49,10 @@ final class MainCoordinator: Coordinator {
         homeCoordinator.start()
         profileCoordinator.start()
         searchCoordinator.start()
+        
+        tabbar.viewControllers = [profileNavigationController, homeNavigationController, searchNavigationController]
+        navigationController.pushViewController(tabbar, animated: true)
+        navigationController.setNavigationBarHidden(true, animated: true)
     }
     
     private func buildTabItem(title: String, image: UIImage, selectedImage: UIImage) -> UITabBarItem {
